@@ -1,0 +1,54 @@
+<style>
+    .watermark {
+        width: 150px;
+        height: 30px;
+    }
+    .welcome .welcome-watermark .watermark.leftwatermark {
+        width: 90px;
+        height: 45px;
+    }
+    .welcome .welcome-watermark {
+        display: none;
+    }
+    .welcome .header {
+        min-height: 100vh;
+        background-image: none;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: relative;
+        background: #7F00FF;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+    .welcome .header::after {
+        content: "";
+        display: block;
+        background-image: url("https://www.ogretmentercihim.com/assets/theme_v2/img/logo/sofft.webp");
+        background-repeat: no-repeat;
+        max-height: 100px;
+        height: 100%;
+        background-position: center;
+        width: 100%;
+        background-size: contain;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-75%);
+    }
+    .welcome .welcome-cards-container {
+        display: none;
+    }
+    .welcome .welcome-footer {
+        margin-top: 0;
+        display: none;
+    }
+    .welcome .header .header-text-subtitle {
+        display: none;
+    }
+    .welcome .header .header-container {
+        display: none;
+    }
+    .welcome .welcome-page-settings {
+        display: none;
+    }
+</style>
